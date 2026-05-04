@@ -4,6 +4,16 @@ Prueba técnica · Angular 18 · Login + CRUD Contactos con perfiles RBAC.
 
 ---
 
+## 📄 Enunciado de la prueba
+
+El documento con el enunciado completo (cuestionario SQL Server + requisitos Angular) está en:
+
+```
+docs/Prueba técnica Angular 18.docx
+```
+
+---
+
 ## ⚡ Cómo correr
 
 ```bash
