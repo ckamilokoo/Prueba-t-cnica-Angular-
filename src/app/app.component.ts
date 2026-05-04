@@ -1,13 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { ToasterComponent } from './shared/ui/toaster.component';
+import { ThemeService } from './core/services/theme.service';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [RouterOutlet, ToasterComponent],
+  template: `
+    <router-outlet />
+    <app-toaster />
+  `
 })
 export class AppComponent {
-  title = 'contactos-app';
+  private theme = inject(ThemeService);
 }
